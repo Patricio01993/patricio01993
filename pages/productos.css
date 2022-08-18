@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.header{
+    background-color: cyan;
+    height: 200px;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+} 
+.logo{
+    float: left;
+}
+.logo span{
+    color: blue;
+}
+.barra{
+    float: right;
+}
+.barra li{
+    list-style: none;
+    display: inline-block;
+}
+.barra a{
+    text-decoration: none;
+    color: blue;
+}
+.barra a:hover{
+    color: white;
+}
+.galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+@media (min-width: 768px) {
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+}
